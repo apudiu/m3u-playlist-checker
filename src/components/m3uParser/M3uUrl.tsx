@@ -9,7 +9,7 @@ const getM3uFromUrl = async (url: string) => {
 };
 
 type Props = {
-  setContent: Setter<string>
+  setContent: (data: string) => void;
 };
 
 export default function M3uUrl(props: Props): JSX.Element {

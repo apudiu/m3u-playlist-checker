@@ -2,7 +2,7 @@ export interface M3UTrack {
   duration: number;
   title: string;
   url: string;
-  status: "untested" | "testing" | "valid" | "invalid";
+  status: "untested" | "testing" | "valid" | "invalid" | "hls";
 }
 
 export function parseM3U(text: string): M3UTrack[] {
@@ -31,4 +31,4 @@ export function parseM3U(text: string): M3UTrack[] {
   return tracks;
 }
 
-// todo: adding tracker
+// todo: adding tracker: https://chat.deepseek.com/a/chat/s/f9cc4b94-e96c-4263-b5ed-7cc915c74b5d
